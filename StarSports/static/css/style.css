@@ -1,0 +1,43 @@
+.star{
+    background-color: rgb(13,22,39);
+    color: rgb(15, 1, 1);
+text-align: center;
+    height: 200px;
+    padding: 50px;
+}
+.nav{
+
+/* border: 5px groove blue; */
+background-color: rgb(15,16,20);
+    height: 100px;
+    padding: 20px;
+}
+.ball{
+    border: none;
+    padding-left: 50px;
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+    
+}
+.call{
+    background-color:  rgb(38, 40, 49);
+    
+}
+.moo{
+    border-radius: 20px;
+}
+.change{
+    color: white;
+}
+.img{
+    height: 150px;
+    width: 1;
+}
+.table{
+    border: 60px solid;
+    height: 30px;
+    width: 30px;
+    
+}
+
+

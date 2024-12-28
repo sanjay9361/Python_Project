@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% include "navbar.html" %}
+<div><br>
+
+    <form action="" method="POST" enctype='multipart/form-data'>
+{% csrf_token %}
+{{form.as_p}}
+<input type="Submit" value="ADD ITEM">
+    </form>
+</div><br>
+
+<video src=""></video>
+
+
+{% endblock  %}

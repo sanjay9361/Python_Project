@@ -1,0 +1,20 @@
+.head1{
+    color: yellow;
+    background-color: black;
+}
+
+.foot1{
+    color: yellow;
+    background-color: black;
+}
+
+.center{
+color: white;
+background-color: mediumblue;
+}
+
+.login{
+    border: 5px groove aqua;
+    color: aqua;
+    cursor: pointer;
+}

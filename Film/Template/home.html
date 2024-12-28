@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class='d-flex justify-content-end'>
+  <a href="/home/4/">Logout</a>
+</div>
+
+<div class='center'>
+    <h1>
+        <center>
+            WonderBar Movies
+
+        </center>
+            </h1>
+</div>
+
+<div class='container-fluid'>
+    <div class="row">
+{% for i in Items %}
+<div class='col-12 col-md-3 justify-content-around mt-5'>
+    <div class="card" style="width: 17rem;">
+      <img src="{{i.Image.url}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h1>{{i.Name}}</h1>
+        <h1 class="card-title">{{i.Price}}</h1>
+        <a href="#" class="btn btn-primary">click</a>
+      </div>
+    </div>
+  </div>
+
+
+{% endfor %}
+
+
+
+    </div>
+</div>
+
+
+{% endblock  %}

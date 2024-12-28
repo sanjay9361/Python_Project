@@ -1,0 +1,26 @@
+{% extends "server/base.html" %}
+
+{% block content %}
+
+<div>
+
+
+
+    <form action="" method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+
+<p><label for="" value="">Item_Name</label><input type="text" name="name" value="{{Items.Name}}"></p>
+<p><label for="" >Item Price</label><input type="text" name="price" value="{{Items.Price}}"></p>
+<p><label for="">Image</label><img src="{{Items.Image.url}}" alt="" height="100px" width="100px"><input type="file" name="image" required='True'></p>
+<input type="Submit" >
+
+
+
+    </form>
+</div>
+
+
+
+
+
+{% endblock  %}

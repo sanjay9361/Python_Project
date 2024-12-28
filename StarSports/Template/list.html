@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% include "navbar.html" %}
+<table>
+<tr>
+    <th>Name</th>
+    <th>Image</th>
+    <th>Price</th>
+    <th>Action</th>
+
+</tr>
+{% for i in Items %}
+<tr>
+    <td>{{i.Name}}</td>
+    <td><img src="{{i.Image.url}}" height="100px" width="100px"></td>
+    <td>{{i.Time}}</td>
+    <td><a href="/home/update/{{i.id}}"><button>UpDate</button></a> | <a href="/home/delete/{{i.id}}"><button>Delete</button></a></td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+
+
+
+
+
+
+{% endblock  %}

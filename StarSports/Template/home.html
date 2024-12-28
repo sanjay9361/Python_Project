@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+{% include "navbar.html" %}
+
+
+
+<div class='call'>
+
+<h1 class="change"><center>Home Page</center></h1>
+
+<div class='container-fluid'>
+    <div class='row'>
+
+{% for i in Items %}
+<div  class='col-12 col-md-3 justify-content-between mt-5'>
+    <div class="call" class="card" style="width: 21rem;">
+        <img src="{{i.Image.url}}" class="card-img-top moo" alt="...">
+        <div class="card-body">
+          <h3 class="change" class="card-title">{{i.Name}}</h3>
+          <p class="change" class="card-text">${{i.Time}}</p>
+          <a href="#" class="btn btn-primary">Click to watch</a>
+        </div>
+      </div>
+</div><br>
+
+
+
+
+{% endfor %}
+
+
+
+    </div>
+
+</div>
+
+</div><br><br>
+
+
+
+{% endblock  %}
